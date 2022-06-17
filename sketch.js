@@ -77,10 +77,10 @@ function draw() {
       fill(255);
       stroke(255);
       strokeWeight(1);
-      textSize(128);
+      textSize((width/13)*1.1);
       text("MuViz", width / 2, height / 7);
 
-      textSize(48);
+      textSize(width/30);
       text("Version 0.2", width / 2, height / 4.5);
 
       uiButtons.start.drawButton();
@@ -90,7 +90,7 @@ function draw() {
       background(0);
       noStroke();    
       fill(255);
-      textSize(64);
+      textSize(width/30);
       text("Choose a Video", width / 2, height / 10);
 
       vidButtons.drawButtons();
@@ -100,10 +100,10 @@ function draw() {
       background(0)
       noStroke();;
       fill(255);
-      textSize(64);
+      textSize(width/30);
       text("Choose a Song", width / 2, height / 10);
 
-      textSize(24);
+      textSize(width/40);
       text("Chosen Video: " + selectedAssets.video, width / 4, height / 12);
 
       songButtons.drawButtons();
@@ -113,9 +113,9 @@ function draw() {
       background(0);
       noStroke();
       fill(255);
-      textSize(64);
+      textSize(width/25);
       text("You have chosen", width / 2, height / 9);
-      textSize(56);
+      textSize(width/28);
       text("Video " + selectedAssets.video + " & Song " + selectedAssets.song, width / 2 + 5, height / 5);
       
       uiButtons.play.drawButton();

@@ -17,7 +17,7 @@ class Button {
         rect(this.x, this.y, this.w, this.h);
 
         noStroke();
-        textSize(64);
+        textSize(width/35);
         fill(this.texCol);
         text(this.tex, this.x, this.y * 1.03);
 
@@ -81,7 +81,7 @@ class Buttons {
     }
 
     drawButtons() {        
-        textSize(48)
+        textSize(width/45)
 
         for (var i = 0; i < this.buttons.length; i++) {  
             if(detectCollision(

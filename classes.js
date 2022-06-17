@@ -81,7 +81,7 @@ class Buttons {
     }
 
     drawButtons() {        
-        textSize(width/45)
+        textSize(width/50)
 
         for (var i = 0; i < this.buttons.length; i++) {  
             if(detectCollision(
